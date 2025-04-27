@@ -30,6 +30,12 @@ public class VaccinationDrive {
     @Column(name = "classes_applicable")
     private String classesApplicable;
 
+    @Column(name = "is_approved")
+    private Boolean isApproved = false;
+
     @Column(name = "created_at", updatable = false)
     private java.time.LocalDateTime createdAt = java.time.LocalDateTime.now();
+
+    @Column(name = "is_completed")
+    private Boolean isCompleted = false;
 }
